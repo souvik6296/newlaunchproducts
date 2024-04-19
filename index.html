@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Link</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/Amazon-Affiliate.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div id="bg">
+        
+    <h1>We are just a 3rd party website to help you to reach <br> out most trending productas at a a low price</h1>
+    <div class="rows">
+
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+
+        </div>
+    </div>
+    <div class="rows">
+
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+
+        </div>
+    </div>
+    <div class="rows">
+
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+            
+        </div>
+        <div class="boxes">
+            <img src="./images/download.jpeg" alt="" srcset="">
+            <a class="link" href="#link" target="_blank">Product Link</a>
+            <span class="btnholders">
+                <span class="amazon"><a href="#link" target="_blank">Open in<br>Amazon</a></span>
+                <span class="share"><a href="">Share link</a></span>
+            </span>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <script>
+        const sharebtn= document.querySelector(".share");
+        const link= window.document.location.href;
+        const title= window.document.title;
+
+        sharebtn.addEventListener("click", ()=>{
+            if(navigator.share){
+                navigator.share({
+                    title: `${title}`,
+                    url: `${link}`
+                }).then(()=>{
+                    console.log("shared");
+                }).catch(console.error);
+            }else{
+                console.log("not available");
+            }
+        })
+    </script>
+    
+</body>
+</html>
