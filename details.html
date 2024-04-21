@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealPulse - Product Details</title>
+    <link rel="shortcut icon" href="./images/Amazon-Affiliate.ico" type="image/x-icon">
+</head>
+
+<body>
+    This Feature is Coming Soon...<br>
+
+    <a href="#" target="_blank" onclick="goToAmz(this)">click here to go to amazon website of this product</a>
+    <script>
+        var data = [{ "pname": "Amkette Wi-Key Backlit Wired Keyboard", "pdetails": "White Backlit with Brightness Control | Laser-Etched Keys | 12 Multi-Media Keys | Plug and Play USB Connection | Compatible with PC/Mac/Laptop | 1 Year Warranty", "plink": "https://amzn.to/49PrYp4" },
+        { "pname": "Dyazo Metal Gaming Keyboard & Mouse Combo", "pdetails": "with Breathable Lights 3 Light Modes | 12 Multimedia Keys | Braided Cable 1.5 Metres (Silver) | Dyazo Metal Keyboards Comes With Metal Alloy Body & Plastic Pads Are Included On The Bottom Backside To Prevent Sliding While You Using In Using", "plink": "https://amzn.to/3U5v56y" }
+    
+        ,{"plink":"https://amzn.to/3w3vxKz"}
+        ,{"plink":"https://amzn.to/3xHxnRH"}
+        ,{"plink":"https://amzn.to/4d62fvp"}
+        ,{"plink":"https://amzn.to/3Q6ZfVR"}
+        ,{"plink":"https://amzn.to/444kpK3"}
+        ,{"plink":"https://amzn.to/444iOUt"}
+        ,{"plink":"https://amzn.to/3Uql2KA"}
+        ,{"plink":"https://amzn.to/4d6Txxa"}
+        ,{"plink":"https://amzn.to/3wb5Kjs"}
+        ,{"plink":"https://amzn.to/3W91X0Y"}
+    ]
+        const goToAmz = (elem) => {
+            var index = localStorage.getItem("index");
+            var link = data[index].plink;
+            elem.href = link;
+
+        }
+    </script>
+
+</body>
+
+</html>
