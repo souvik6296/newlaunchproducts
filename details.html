@@ -6,27 +6,552 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DealPulse - Product Details</title>
     <link rel="shortcut icon" href="./images/Amazon-Affiliate.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <style>
+        .big-cont {
+            display: flex;
+        }
+
+        #leftside {
+            width: 30%;
+        }
+
+        #most-left {
+            display: flex;
+            flex-direction: column;
+            width: 5%;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #most-left img {
+            width: 100%;
+            height: auto;
+        }
+
+        #rightside {
+            width: 65%;
+        }
+
+        #desc {
+            width: 50%;
+            font-family: sans-serif;
+
+        }
+
+        .btnmy {
+            margin-top: 10px;
+        }
+
+        #about-items-holder {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .abouts {
+            margin-top: 10px;
+        }
+
+
+        @media only screen and (max-width: 990px) {
+            .big-cont {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #leftside {
+                width: 70%;
+            }
+
+            #most-left {
+                flex-direction: row;
+                width: fit-content;
+                max-width: 85%;
+                overflow: scroll;
+                height: 8vh;
+                margin-bottom: 15px;
+            }
+
+            #most-left img {
+                height: 100%;
+                width: auto;
+            }
+
+            #rightside {
+                width: 95%;
+            }
+
+            #desc {
+                width: 90%;
+            }
+
+
+        }
+    </style>
 </head>
 
 <body>
-    This Feature is Coming Soon...<br>
 
-    <a href="#" target="_blank" onclick="goToAmz(this)">click here to go to amazon website of this product</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/Amazon-Affiliate.png" alt="Logo" width="40" height="34"
+                        class="d-inline-block align-text-top">
+                    DealPulse.com
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" onclick="comingSoon()">Product Details</a>
+                        </li>
+
+                        <button type="button" class="btn btn-primary" style="margin: 5px;" onclick="comingSoon()">Sign
+                            In</button>
+                        <button type="button" class="btn btn-secondary" style="margin: 5px;" onclick="comingSoon()">Sign
+                            Up</button>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" onclick="comingSoon()">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="big-cont">
+            <div id="most-left">
+                <!-- <img src="./images/p1/p1-1.jpg" alt="" srcset="">
+                <img src="./images/p2/p2-1.webp" alt="" srcset="">
+                <img src="./images/p3/p3-1.webp" alt="" srcset="">
+                <img src="./images/p4/p4-1.jpg" alt="" srcset=""> -->
+            </div>
+            <div id="leftside" class="container">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div id="slidingimgholder" class="carousel-inner">
+                        <!-- <div class="carousel-item active" data-bs-interval="1500">
+                            <img src="./images/p1/p1-1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1500">
+                            <img src="./images/p2/p2-1.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/p3/p3-1.webp" class="d-block w-100" alt="...">
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div id="rightside">
+                <h2 id="name">Amkette Wi-Key Backlit Wired Keyboard</h2>
+                <h5 id="desc">White Backlit with Brightness Control | Laser-Etched Keys | 12 Multi-Media Keys | Plug and
+                    Play USB Connection | Compatible with PC/Mac/Laptop | 1 Year Warranty</h5>
+
+                <p id="pricehead">Price Range:
+                <p id="pricerange">Rs 700/- - Rs 800/-</p>
+                </p>
+                <a href="#" target="_blank" onclick="goToAmz(this)" class="btn btn-success btnmy">
+                    <img src="./images/shopping-cart.png" alt="" srcset="">
+                    Go to Amazon & Buy now
+                </a>
+                <a href="#" onclick="share()" class="btn btn-primary btnmy">
+                    <img src="./images/share.png" alt="" srcset="">
+                    Share with your friends
+                </a>
+            </div>
+        </div>
+        <div id="about-items-holder" class="big-cont">
+            <h3 style="margin-left: 10px;">Some Remakable keypoints of this Product:</h3>
+            <ul id="about-items">
+                <li class="abouts">Rainbow LED Gaming Keyboard: The rainbow LED keyboard, with rainbow backlighting and
+                    white keycaps has a highly-translucent effect, bringing you the ultimate gaming atmosphere.</li>
+                <li class="abouts">a choice of static/breathing mode lights, you can also adjust the backlight
+                    brightness and breathing speed, or turn off the backlight when you don't need it. Great for gaming
+                    or work</li>
+            </ul>
+            <a href="#" target="_blank" onclick="goToAmz(this)" class="btn btn-success btnmy"
+                style="width: fit-content; margin-left: 15px;">
+                <img src="./images/shopping-cart.png" alt="" srcset="">
+                Go to Amazon & Buy now
+            </a>
+            <a href="#" onclick="share()" class="btn btn-primary btnmy" style="width: fit-content; margin-left: 15px;">
+                <img src="./images/share.png" alt="" srcset="">
+                Share with your friends
+            </a>
+        </div>
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script>
-        var data = [{ "pname": "Amkette Wi-Key Backlit Wired Keyboard", "pdetails": "White Backlit with Brightness Control | Laser-Etched Keys | 12 Multi-Media Keys | Plug and Play USB Connection | Compatible with PC/Mac/Laptop | 1 Year Warranty", "plink": "https://amzn.to/49PrYp4" },
-        { "pname": "Dyazo Metal Gaming Keyboard & Mouse Combo", "pdetails": "with Breathable Lights 3 Light Modes | 12 Multimedia Keys | Braided Cable 1.5 Metres (Silver) | Dyazo Metal Keyboards Comes With Metal Alloy Body & Plastic Pads Are Included On The Bottom Backside To Prevent Sliding While You Using In Using", "plink": "https://amzn.to/3U5v56y" }
-    
-        ,{"plink":"https://amzn.to/3w3vxKz"}
-        ,{"plink":"https://amzn.to/3xHxnRH"}
-        ,{"plink":"https://amzn.to/4d62fvp"}
-        ,{"plink":"https://amzn.to/3Q6ZfVR"}
-        ,{"plink":"https://amzn.to/444kpK3"}
-        ,{"plink":"https://amzn.to/444iOUt"}
-        ,{"plink":"https://amzn.to/3Uql2KA"}
-        ,{"plink":"https://amzn.to/4d6Txxa"}
-        ,{"plink":"https://amzn.to/3wb5Kjs"}
-        ,{"plink":"https://amzn.to/3W91X0Y"}
-    ]
+
+
+        var data = [
+            {
+                "pname": "Amkette Wi-Key Backlit Wired Keyboard",
+                "pdetails": "White Backlit with Brightness Control | Laser-Etched Keys | 12 Multi-Media Keys | Plug and Play USB Connection | Compatible with PC/Mac/Laptop | 1 Year Warranty",
+                "plink": "https://amzn.to/49PrYp4",
+                "pricerange": "700 - 800",
+                "numofimg": 6,
+                "additional_details": ["Introducing our Full-Size Wired Keyboard with White Backlight, designed to enhance your typing experience in low-light conditions. This keyboard offers the convenience of easily switching off the backlight and provides three brightness levels for personalized illumination.",
+                    "Equipped with 12 multimedia shortcut keys, the Wi-Key Backlit Keyboard puts control at your fingertips, making it effortless to manage your multimedia tasks.",
+                    "Featuring a generous 1.4-meter cable with a granular texture, our keyboard ensures reliable connectivity and durability.",
+                    "Featuring a generous 1.4-meter cable with a granular texture, our keyboard ensures reliable connectivity and durability.",
+                    "Enjoy universal compatibility with this keyboard, as it seamlessly works with various operating systems including Microsoft Windows, macOS, and Linux.",
+                    "Hassle-Free 1-Year Manufacturing Warranty | Please Call or WhatsApp our customer support in case of any issues."]
+
+            },
+            {
+                "pname": "Dyazo Metal Gaming Keyboard & Mouse Combo",
+                "pdetails": "Combo with Breathable Lights 3 Light Modes | 12 Multimedia Keys | Braided Cable 1.5 Metres (Silver)",
+                "plink": "https://amzn.to/3w3vxKz",
+                "pricerange": "900 - 1100",
+                "numofimg": 6,
+                "additional_details": [
+                    "104 Keys (12 Multimedia Keys)",
+                    "Windows Launch Key",
+                    "3 Light Modes (On | Off | Breathe)",
+                    "Breathe Use Fn + Scroll Button For This Function",
+                    "Keyboard Dimensions 475 * 190 * 41 mm (640 grams)",
+                    "Mouse Dimension 125 * 79 * 35 mm (110 grams)",
+                    "Cable Is Braided 1.5 Metre Length",
+                    "Lifespan Of Keyboard And Mouse Is > 5 Million Times",
+                    "Dyazo Metal Keyboards Comes With Metal Alloy Body & Plastic Pads Are Included On The Bottom Backside To Prevent Sliding While You Using In Using",
+                    "This Plug-And-Play Gaming Keyboard And Mouse (No Additional Software Needed) Connects Through Modern USB Interface, And Is Compatible With All Modern Operative Systems"
+                ]
+
+            },
+
+            {
+                "pname": "Ant Esports KM1610 LED Keyboard",
+                "pdetails": "Keyboard and Mouse Combo, 104 Keys Rainbow Backlit Keyboard and 7 Colour RGB Mouse, White Gaming Keyboard and Mouse Combo for PC Laptop Xbox PS4 Gamers and Work",
+                "plink": "https://amzn.to/3xHxnRH",
+                "pricerange": "600 - 800",
+                "numofimg": 6,
+                "additional_details": [
+                    "Rainbow LED Gaming Keyboard: The rainbow LED keyboard, with rainbow backlighting and white keycaps has a highly-translucent effect, bringing you the ultimate gaming atmosphere. With a choice of static/breathing mode lights, you can also adjust the backlight brightness and breathing speed, or turn off the backlight when you don't need it. Great for gaming or work",
+                    "High Performance Wired Keyboard: 12 multimedia keys for gaming or work efficiency. Interchangeable WASD keys and WIN lock function improves your gaming performance. With 19 anti-collision keys, no tap will be lost, ensuring smooth typing",
+                    "Ergonomic Keyboard: The light-up keyboard has an ergonomic design. Curved keycaps, stepped layout, collapsible feet, and crater keys. Gives you a comfortable typing experience and improves the accuracy of keystrokes. This white wired keyboard is ideal for gaming and office work",
+                    "Wired Gaming Mouse: The USB wired gaming mouse features a high-precision sensor and low-friction PTFE feet to give you precise and smooth control. Easily switch among four DPI (dots per inch) levels (1200 DPI/1800 DPI/2400 DPI/3600 DPI). 6 buttons (2 side buttons). Long press the DPI button to switch between 7-color breathing and red light modes",
+                    "Strong Compatibility: The gaming mouse and keyboard combo is suitable for PC, laptop, PS3, PS4, PS5, Xbox, and Mac. USB plug and play, no additional drivers required. Compatible with Windows 2000/2003/XP/Vista/Win7/Win8/Win10/Win11"
+                ]
+            },
+            {
+                "pname": "Amazon Basics Wireless Bluetooth Keyboard",
+                "pdetails": "Bluetooth Multi-Device Keyboard for Windows, Apple iOS Android Or Chrome, Compact Space-Saving Design, for Pc/Mac/Laptop/Smartphone/Tablet (Black)",
+                "plink": "https://amzn.to/4d62fvp",
+                "pricerange": "1100 - 1300",
+                "numofimg": 6,
+                "additional_details": [
+                    "Wireless Multi-Device Keyboard with enhanced efficiency",
+                    "Extremely durable and spill-resistant surviving any minor accidents",
+                    "Versatile feature that allows you to connect with any Bluetooth-enabled device with external keyboard support",
+                    "Integrated cradle to hold your phone while you type",
+                    "Easy-Switch Dial for absolute convenience",
+                    "Compatible with most PCs, smartphones, iPhones, Tablets, etc."
+                ]
+            },
+
+            {
+                "pname": "Zebronics Jet Premium",
+                "pdetails": "Wired Gaming On Ear Headphone with LED Light for earcups, 40mm Neodymium Drivers, 2 Meter Braided Cable, Flexible mic, Suspension Headband, 3.5mm + USB Connector (Black + Blue)",
+                "plink": "https://amzn.to/3Q6ZfVR",
+                "pricerange": "700 - 900",
+                "numofimg": 6,
+                "additional_details": [
+                    "Get immersed into your gaming world with the 40mm Neodymium drivers which produce the best sound signature for a Gaming headphone! Powerful Bass, minor details like footsteps and gunshots, Clear vocals are easily audible with ZEB-JET!",
+                    "ZEB-JET Gaming headphones are made Gaming-grade with the 2 meter Braided cable for the rigid and rugged long time usage purpose.",
+                    "Elevate your gaming experience with the LED light arrangement on the earcups! The lights are multicolor, reflecting a varied range of color combinations.",
+                    "With the Plug and play usage, users simply need to plug in the 3.5mm AUX jack for both speaker output and microphone input. The additional USB connector is for LED lights.",
+                    "The headphones provide options for adjusting the mic position as it is flexible and Mute / Unmute the mic when required, with the In-line controller pod.",
+                    "Simply wear the headphones, as the suspension headbands automatically adjust according to the user's comfort. No manual adjustment for the headband is required.",
+                    "The In-line controller helps to control the volume level and the mic On/Off button.",
+                    "Lightweight design, comfortable and soft ear cushions and suspension headbands for long hours of gaming."
+                ]
+            },
+            {
+                "pname": "Matlek Gaming Over Ear Headphones",
+                "pdetails": "Gaming Over Ear Headphones with Adjustable Mic | Works with All The Mobile Phones | Surround Sound, Deep Bass, Blue",
+                "plink": "https://amzn.to/444kpK3",
+                "pricerange": "500 - 700",
+                "numofimg": 6,
+                "additional_details": [
+                    "3D GAMING SOUND: It's important for you to hear footsteps & distant gunshots from different directions. This headset offers a 360-degree soundscape to provide realism to your gaming session.",
+                    "FLEXIBLE NOISE CANCELLATION BOOM MIC: Matlek headset accurately picks up your voice to cancel out other background noises.",
+                    "ERGONOMIC SOFT EARMUFF+ADJUSTABLE HEADBAND+LIGHTWEIGHT: This Headphone is shaped to naturally fit the human head, the earmuff is filled with soft memory foam, and adjustable headband.",
+                    "MULTI-PLATFORM COMPATIBILITY: Use 3.5MM JACK TO CONNECT with Mobile Phones, Tablets, PS4, Xbox One.",
+                    "RELIABLE AFTER-SALE SUPPORT: Your using experience is what we mostly cherish. We will make our greatest effort to take responsibility for your shopping experience.",
+                    "Model: Gh-16 Blue",
+                    "Control Type: Volume Control"
+                ]
+            },
+
+            {
+                "pname": "Carbon Wired USB Gaming Over Ear Headphones",
+                "pdetails": "TAG Carbon Wired USB Gaming Over Ear Headphones, Headset with Mic & RGB Effect",
+                "plink": "https://amzn.to/444iOUt",
+                "pricerange": "1300 - 1500",
+                "numofimg": 6,
+                "additional_details": [
+                    "Sound Quality: Truly immerse yourself in your games with high-quality audio that lets you hear every single footstep in-game.",
+                    "Microphone: TAG Carbon comes equipped with a high-quality built-in noise-canceling microphone for quick and stable communication.",
+                    "Build Quality: Its luxurious noise-isolating memory foam ear pads and adjustable split headband reduce pressure and provide optimal comfort for long gaming sessions.",
+                    "Noise Cancellation: TAG Carbon provides you a passive noise-canceling experience. Its closed ear cups design blocks any kind of distraction from outside which helps you keep focus during the game for as long as you want.",
+                    "Warranty: 1 year warranty",
+                    "Control Type: Call Control",
+                    "Model: Tag Gamerz Carbon"
+                ]
+            },
+            {
+                "pname": "STRIFF Mpad Mouse Mat",
+                "pdetails": "Mouse Mat 230X190X3mm Gaming Mouse Pad, Non-Slip Rubber Base, Waterproof Surface, Premium-Textured, Compatible with Laser and Optical Mice(Universe Black)",
+                "plink": "https://amzn.to/3Uql2KA",
+                "pricerange": "90 - 110",
+                "numofimg": 6,
+                "additional_details": ["9.4 Inches X 7.9 Inches) 240mm x 200mm x 2mm Size: This mouse pad is ideal for Gamers, Graphic Designers, Students, or anyone using mouse for long sessions. This helps to improve the gaming experience for gamers or the work efficiency in the office."]
+            },
+
+            {
+                "pname": "Tizum Mouse Pad",
+                "pdetails": "Mouse Pad/Computer Mouse Mat with Anti-Slip Rubber Base | Smooth Mouse Control | Spill-Resistant Surface for Laptop, Notebook, MacBook, Gaming, Laser/Optical Mouse, 9.4”x 7.9”, Multicolored",
+                "plink": "https://amzn.to/4d6Txxa",
+                "pricerange": "100 - 130",
+                "numofimg": 6,
+                "additional_details": [
+                    "Size: 9.4 Inches X 7.9 Inches (240mm x 200mm x 2mm)",
+                    "Ideal for Gamers, Graphic Designers, Students, or anyone using a mouse for long sessions. This helps to improve the gaming experience for gamers or the work efficiency in the office.",
+                    "Durable Manufacturing Design with Enhanced Precision: High-density premium texture which was processed in a high-temperature and high-pressure chamber to ensure long-term use without deformation and degumming.",
+                    "Ultra-smooth Lycra Cover: Our mouse pad adopts high-quality Lycra cloth on the cover for smooth gliding. It was optimized for fast movement while maintaining excellent accuracy and control. It is compatible with mechanical and optical mice.",
+                    "Works with Laser, Optical Mouse, Bluetooth Mouse.",
+                    "Non-slip Rubber Base: The soft and dense non-skid nature rubber base keeps the pad firmly in place. It provides stable operation of the mouse. Just immerse into your work or games without worrying about the annoying mouse pad movement."
+                ]
+            },
+            {
+                "pname": "Tukzer Large Size Gaming Mouse Pad",
+                "pdetails": "(795mm x 298mm x 3.45mm) Extended Gaming Mouse Pad| Stitched Embroidery Edges| Non-Slip Rubber Base |for Computer Laptop | Keyboard Mouse Pad for Office & Home (Matrix)",
+                "plink": "https://amzn.to/3wb5Kjs",
+                "pricerange": "400 - 600",
+                "numofimg": 6,
+                "additional_details": [
+                    "OPTIMUM SIZE 31.1 x 11.8 INCH: This XXL size extended mouse pad is large enough to fit your gaming mouse, full-size mechanical keyboard, and other desk items. Keep a clean, uncluttered desk. Play with the freedom to configure your setup anyway you want. This is a perfect gaming mouse pad for those who use a lower DPI or just like to have more room to maneuver.",
+                    "HIGLY DURABLE DESIGN: Frayed edges and low-quality materials are problems many gamers are familiar with. The Tukzer gaming mouse pad made of advanced ultra-smooth microfiber cloth textile chosen only after countless hours of testing. Neatly stitched edges prevent wrapping and frying which increasing durability. You can fold & roll this mouse pad without fold marks. So you can carry anywhere or store safely when Not in Use.",
+                    "SUPERIOR MOUSE CONTROL SURFACE: High-density textile structure optimized for fast moving while maintaining excellent balance between glide and control. The performance-tuned surface optimizes mouse tracking accuracy for both optical and laser sensors.",
+                    "NON-SLIP RUBBER BASE: The soft and dense non-skid nature rubber base keeps this desk pad firmly in place. This large mouse mat remains uniformly flat even over imperfect surfaces. Just immerse into your work or games without worrying about the annoying mouse pad movement.",
+                    "EASY TO FOLD & CARRY: You can fold & roll this mouse pad without fold marks, so you can carry it anywhere or store it safely when not in use."
+                ]
+            },
+
+            {
+                "pname": "Tukzer Large Size Gaming Mouse Pad",
+                "pdetails": "(795mm x 298mm x 3.45mm) Extended Gaming Mouse Pad| Stitched Embroidery Edges| Non-Slip Rubber Base |for Computer Laptop | Keyboard Mouse Pad for Office & Home (Color Waves)",
+                "plink": "https://amzn.to/3W91X0Y",
+                "pricerange": "400 - 600",
+                "numofimg": 6,
+                "additional_details": [
+                    "OPTIMUM SIZE: 31.1 x 11.8 INCH",
+                    "This XXL size extended mouse pad is large enough to fit your gaming mouse, full-size mechanical keyboard, and other desk items. Keep a clean, uncluttered desk. Play with the freedom to configure your setup any way you want. This is a perfect gaming mouse pad for those who use a lower DPI or just like to have more room to maneuver.",
+                    "HIGHLY DURABLE DESIGN",
+                    "Frayed edges and low-quality materials are problems many gamers are familiar with. The Tukzer gaming mouse pad is made of advanced ultra-smooth microfiber cloth textile chosen only after countless hours of testing. Neatly stitched edges prevent wrapping and fraying, increasing durability. You can fold & roll this mouse pad without fold marks, so you can carry it anywhere or store it safely when not in use.",
+                    "SUPERIOR MOUSE CONTROL SURFACE",
+                    "High-density textile structure optimized for fast moving while maintaining excellent balance between glide and control. The performance-tuned surface optimizes mouse tracking accuracy for both optical and laser sensors.",
+                    "NON-SLIP RUBBER BASE",
+                    "The soft and dense non-skid nature rubber base keeps this desk pad firmly in place. This large mouse mat remains uniformly flat even over imperfect surfaces. Just immerse into your work or games without worrying about the annoying mouse pad movement.",
+                    "EASY TO FOLD & CARRY",
+                    "You can fold & roll this mouse pad without fold marks, so you can carry it anywhere or store it safely when not in use."
+                ]
+            },
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            },
+            {
+                "pname": "",
+                "pdetails": "",
+                "plink": "",
+                "pricerange": "",
+                "additional_details": ["", "", "..."]
+            }
+
+        ]
+
+        var index = localStorage.getItem("index");
+        if (index == null) {
+            const url = window.document.location.href;
+            index = parseInt(url.slice(url.indexOf("=p")));
+
+        }
+        var listofdetails = data[index].additional_details;
+        var length = listofdetails.length;
+        var parentul = document.getElementById("about-items");
+        for (let i = 0; i < length; i++) {
+            var elem = document.createElement("li");
+            elem.className = "abouts";
+            elem.innerText = listofdetails[i];
+            parentul.appendChild(elem);
+        }
+        document.getElementById("name").innerText = data[index].pname;
+        document.getElementById("desc").innerText = data[index].pdetails;
+        document.getElementById("pricerange").innerText = "Rs/ " + data[index].pricerange;
+        var numofimgs = data[index].numofimg;
+        var mostleft = document.getElementById("most-left");
+        for (let i = 0; i < numofimgs; i++) {
+            var elem = document.createElement("img");
+            var y = parseInt(index) + 1;
+            var x = i + 1;
+            elem.src = "./images/p" + y + "/p" + y + "-" + x + ".jpg";
+            mostleft.appendChild(elem);
+        }
+
+        var slidingholder = document.getElementById("slidingimgholder");
+
+        for (let i = 0; i < numofimgs; i++) {
+
+            var subholder = document.createElement("div");
+            if (i == 0) {
+
+                subholder.className = "carousel-item active";
+            } else {
+                subholder.className = "carousel-item";
+
+            }
+            var y = parseInt(index) + 1;
+            subholder.dataset.interval = 1500;
+            var holder = document.createElement("img");
+            holder.className = "d-block w-100";
+            var x = i + 1;
+            holder.src = "./images/p" + y + "/p" + y + "-" + x + ".jpg";
+            subholder.appendChild(holder);
+            slidingholder.appendChild(subholder);
+
+        }
+
+
+
+        const title = window.document.title;
+
+        const share = () => {
+
+            var url = window.document.location.href;
+            if (url.includes("?")) {
+                const link1 = url;
+                const text = "Hey! Just wanted to share this awesome Amazon product link with you. I think you'll really like it! Check it out and let me know what you think. Happy browsing! 😊🛒. Product link: ";
+                if (navigator.share) {
+                    navigator.share({
+                        title: `${title}`,
+                        text: `${text}`,
+                        url: `${link1}`
+                    }).then(() => {
+                        console.log("shared");
+                    }).catch(console.error);
+                } else {
+                    console.log("not available");
+                }
+
+            } else {
+                const link1 = url + "?index=p" + index;
+                const text = "Hey! Just wanted to share this awesome Amazon product link with you. I think you'll really like it! Check it out and let me know what you think. Happy browsing! 😊🛒. Product link: ";
+                if (navigator.share) {
+                    navigator.share({
+                        title: `${title}`,
+                        text: `${text}`,
+                        url: `${link1}`
+                    }).then(() => {
+                        console.log("shared");
+                    }).catch(console.error);
+                } else {
+                    console.log("not available");
+                }
+            }
+
+
+
+        }
+
+
+
+
+
         const goToAmz = (elem) => {
             var index = localStorage.getItem("index");
             var link = data[index].plink;
@@ -36,5 +561,11 @@
     </script>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 
 </html>
